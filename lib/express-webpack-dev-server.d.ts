@@ -15,6 +15,4 @@ declare module "express-webpack-dev-server" {
 	) : void;
 
 	namespace ExpressWebpackDevServer {}
-
-	export = ExpressWebpackDevServer;
 }
