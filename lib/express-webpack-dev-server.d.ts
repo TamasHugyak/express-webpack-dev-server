@@ -1,29 +1,23 @@
 
-/**
- * @utf8 ő
- */
+import { Server }		from 'http';
+import { Application }	from 'express';
 
-// export as namespace myClassLib;
+declare namespace w {
+	class ExpressWebpackDevServer {
+		constructor(
+			httpServer			: Server,
+			expressApp			: Application,
+			webpackConfig		: object,
+			middlewareOptions	: object
+		);
 
-export = ExpressWebpackDevServer;
-
-import { Server }		from "http";
-import { Application }	from "express";
-
-declare class ExpressWebpackDevServer {
-	constructor(
-		httpServer			: Server,
-		expressApp			: Application,
-		webpackConfig		: object,
-		middlewareOptions	: object
-	);
-
-	new (
-		httpServer			: Server,
-		expressApp			: Application,
-		webpackConfig		: object,
-		middlewareOptions	: object
-	) : void;
+		new (
+			httpServer			: Server,
+			expressApp			: Application,
+			webpackConfig		: object,
+			middlewareOptions	: object
+		) : void;
+	}
 }
 
-declare namespace ExpressWebpackDevServer {}
+export = w;
