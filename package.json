@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "Webpack developer server integration for Express web server",
 	"main": "lib/express-webpack-dev-server.js",
+	"types": "lib/express-webpack-dev-server.d.ts",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build:client-index" : "webpack ./client/index.js build/index.bundle.js --color -p",
