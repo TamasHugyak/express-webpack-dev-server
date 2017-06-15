@@ -3,19 +3,27 @@
  * @utf8 ő
  */
 
-declare module "express-webpack-dev-server" {
-	import { Server }		from "http";
-	import { Application }	from "express";
+// export as namespace myClassLib;
 
-	class ExpressWebpackDevServer {
-		constructor(
-			httpServer			: Server,
-			expressApp			: Application,
-			webpackConfig		: object,
-			middlewareOptions	: object
-		);
-	}
-	export {
-		ExpressWebpackDevServer
-	};
+export = ExpressWebpackDevServer;
+
+import { Server }		from "http";
+import { Application }	from "express";
+
+declare class ExpressWebpackDevServer {
+	constructor(
+		httpServer			: Server,
+		expressApp			: Application,
+		webpackConfig		: object,
+		middlewareOptions	: object
+	);
+
+	new (
+		httpServer			: Server,
+		expressApp			: Application,
+		webpackConfig		: object,
+		middlewareOptions	: object
+	) : void;
 }
+
+declare namespace ExpressWebpackDevServer {}
