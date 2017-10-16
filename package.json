@@ -1,6 +1,6 @@
 {
 	"name": "express-webpack-dev-server",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "Webpack developer server integration for Express web server",
 	"main": "lib/express-webpack-dev-server.js",
 	"types": "lib/express-webpack-dev-server.d.ts",
@@ -18,15 +18,17 @@
 		"url": "https://github.com/TamasHugyak/express-webpack-dev-server/issues"
 	},
 	"homepage": "https://github.com/TamasHugyak/express-webpack-dev-server#readme",
+	"dependencies": {
+		"sockjs": "^0.3.19",
+		"webpack": "^3.7.1",
+		"webpack-dev-middleware": "^1.12.0"
+	},
 	"devDependencies": {
 		"ansi-html": "^0.0.7",
 		"html-entities": "^1.2.1",
 		"jquery": "^3.2.1",
-		"sockjs": "^0.3.19",
 		"sockjs-client": "^1.1.4",
 		"strip-ansi": "^3.0.1",
-		"webpack": "^3.7.1",
-		"webpack-dev-middleware": "^1.12.0"
 	},
 	"engines": {
 		"node": ">=7.0.0"
