@@ -1,6 +1,6 @@
 {
 	"name": "express-webpack-dev-server",
-	"version": "1.1.1",
+	"version": "2.0.0",
 	"description": "Webpack Developer Server integration for Express web server",
 	"main": "lib/express-webpack-dev-server.js",
 	"types": "lib/express-webpack-dev-server.d.ts",
